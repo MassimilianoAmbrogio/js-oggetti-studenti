@@ -38,4 +38,3 @@ console.log(studenti.nome, studenti.cognome);
 
 // Nuovo studente
 console.log('Nome: ' + nomeStudente, 'Cognome: ' + cognomeStudente, 'Età: ' + etaStudente);
-
