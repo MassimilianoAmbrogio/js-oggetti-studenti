@@ -23,18 +23,45 @@ for (var key in studente) {
 }
 
 // Oggetti di studenti 
-var studenti = {
-  nome: ['Mario', 'Luca', 'Martina'],
-  cognome: ['Beruti', 'Vinci', 'Nobile'],
-};
+var studenti = [
+  {
+    nome: 'Simone',
+    cognome: 'Vinci',
+    Età: '19' 
+  },
+  {
+    nome: 'Mario',
+    cognome: 'Beruti',
+    Età: '38' 
+  },
+  {
+    nome: 'Martina',
+    cognome: 'Nobile',
+    Età: '44'
+  }
+];
 
-// Stampare per ogni studente nome e cognome
-console.log(studenti.nome, studenti.cognome);
+for (var i = 0; i < studenti.length; i++) {
+  var studente = studenti[i];
+
+  // Stampare per ogni studente nome e cognome
+  console.log('Studente ' + (i + 1));
+  console.log('Nome', studente.nome );
+  console.log('Cognome', studente.cognome);
+  console.log('------------');
+}
   
 // Utente aggiunge nuovo oggetto all'array sopra
-  var nomeStudente = (prompt('Inserisci nome').trim());
-  var cognomeStudente = (prompt('Inserisci cognome').trim());
-  var etaStudente = (prompt('Inserisci età').trim());
+  var nuovoNome = (prompt('Inserisci il nome del nuovo studente').trim());
+  var nuovoCognome = (prompt('Inserisci il cognome del nuovo studente').trim());
+  var nuovoEtà = parseInt(prompt('Inserisci età del nuovo studente').trim());
 
 // Nuovo studente
-console.log('Nome: ' + nomeStudente, 'Cognome: ' + cognomeStudente, 'Età: ' + etaStudente);
+studenti.push({
+  Nome: nuovoNome,
+  Cognome: nuovoCognome,
+  Età: nuovoEtà
+});
+
+console.log(studenti);
+console.table(studenti);
