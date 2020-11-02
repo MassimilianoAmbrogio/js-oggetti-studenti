@@ -14,7 +14,7 @@
 var studente = {
     Nome: 'Luca',
     Cognome: 'Rossi',
-    Età: '25'
+    Eta: '25'
 };
 
 // Stampa le proprietà
@@ -27,17 +27,17 @@ var studenti = [
   {
     nome: 'Simone',
     cognome: 'Vinci',
-    Età: '19' 
+    Eta: '19' 
   },
   {
     nome: 'Mario',
     cognome: 'Beruti',
-    Età: '38' 
+    Eta: '38' 
   },
   {
     nome: 'Martina',
     cognome: 'Nobile',
-    Età: '44'
+    Eta: '44'
   }
 ];
 
@@ -54,13 +54,13 @@ for (var i = 0; i < studenti.length; i++) {
 // Utente aggiunge nuovo oggetto all'array sopra
   var nuovoNome = (prompt('Inserisci il nome del nuovo studente').trim());
   var nuovoCognome = (prompt('Inserisci il cognome del nuovo studente').trim());
-  var nuovoEtà = parseInt(prompt('Inserisci età del nuovo studente').trim());
+  var nuovoEta = parseInt(prompt('Inserisci età del nuovo studente').trim());
 
 // Nuovo studente
 studenti.push({
   Nome: nuovoNome,
   Cognome: nuovoCognome,
-  Età: nuovoEtà
+  Eta: nuovoEta
 });
 
 console.log(studenti);
