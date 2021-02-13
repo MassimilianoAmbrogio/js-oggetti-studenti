@@ -11,56 +11,56 @@
  */
 
 // Descrizione studente
-var studente = {
-    Nome: 'Luca',
-    Cognome: 'Rossi',
-    Eta: '25'
-};
+// var studente = {
+//     nome: 'Luca',
+//     cognome: 'Rossi',
+//     eta: 25
+// };
 
 // Stampa le proprietà
-for (var key in studente) {
-    console.log(key + ' ' + studente[key]);
-}
+// for (var key in studente) {
+//     console.log(key + ' ' + studente[key]);
+// }
 
 // Oggetti di studenti 
 var studenti = [
   {
     nome: 'Simone',
     cognome: 'Vinci',
-    Eta: '19' 
+    eta: 19
   },
   {
     nome: 'Mario',
     cognome: 'Beruti',
-    Eta: '38' 
+    eta: 38 
   },
   {
     nome: 'Martina',
     cognome: 'Nobile',
-    Eta: '44'
+    eta: 44
   }
 ];
 
-for (var i = 0; i < studenti.length; i++) {
-  var studente = studenti[i];
+// for (var i = 0; i < studenti.length; i++) {
+//   var studente = studenti[i];
 
-  // Stampare per ogni studente nome e cognome
-  console.log('Studente ' + (i + 1));
-  console.log('Nome', studente.nome );
-  console.log('Cognome', studente.cognome);
-  console.log('------------');
-}
+//   // Stampare per ogni studente nome e cognome
+//   console.log('Studente ' + (i + 1));
+//   console.log('Nome', studente.nome );
+//   console.log('Cognome', studente.cognome);
+//   console.log('------------');
+// }
   
 // Utente aggiunge nuovo oggetto all'array sopra
-  var nuovoNome = (prompt('Inserisci il nome del nuovo studente').trim());
-  var nuovoCognome = (prompt('Inserisci il cognome del nuovo studente').trim());
+  var nuovoNome = prompt('Inserisci il nome del nuovo studente').trim();
+  var nuovoCognome = prompt('Inserisci il cognome del nuovo studente').trim();
   var nuovoEta = parseInt(prompt('Inserisci età del nuovo studente').trim());
 
 // Nuovo studente
 studenti.push({
-  Nome: nuovoNome,
-  Cognome: nuovoCognome,
-  Eta: nuovoEta
+  nome: nuovoNome,
+  cognome: nuovoCognome,
+  eta: nuovoEta
 });
 
 console.log(studenti);
